@@ -1,0 +1,35 @@
+@import url('font-url');
+
+body {
+    float:left;
+    background-color: beige; /*color of the back*/
+    color: #000000; /*text color*/
+    margin: 0px;
+}
+
+h3{
+    color: #ffffff; /*all h3 tags will have white text*/
+}
+
+body h3 { /* Only the h3 elems INSIDE body tag*/
+    color: #ff00ff;
+}
+
+.classname {
+    opacity: .3;
+    border-top-left-radius: 15px;
+
+}
+
+#idname {
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: 2px solid #ff00ff;
+}
+
+h1, h2 {
+    display: inline; /*Sets it to not full width, as wide as it needs to be*/
+    float: left;
+    margin: auto;
+}
+

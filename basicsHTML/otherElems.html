@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SITE</title>
+        <meta charset='UTF-8'>
+        <meta name='description' content='this is the description that shows up on google'
+        <meta name='keywords' content='html5, tags'>
+        <meta name='author' content='andohuang'>
+        <meta name='viewport' content = 'width=decive-width, initial-scale=1.0'>
+
+        <link rel='stylesheet' href='css/styles.css'>
+    </head>
+
+    <main id = "idname">
+        <video width = "540" height = "320" controls>
+            <!--Selects first viable elem to display-->
+            <source src = "video.mp4" type = "video/mp4">
+            <source src = "video.ogg" type = "video/ogg">
+            Your browser doesn't support html5 
+        </video>
+
+        <section>
+            <audio id ='mySound' width='600' controls autoplay loop> <!--disinclude controls for autoplaying-->
+                <source src='audio.mp3' type = 'audio/mp3'/>
+            </audio>
+        </section>
+
+    </main>
+
+    <section id = "contact form">
+        <h2>Place Order</h2>
+        <form method = "GET" action="php/place-order.php">
+            <h4>
+                Delivery
+            </h4>
+            <input name = "deliveryMethod" type = "radio" value = "delivery"/> Delivery<br/>
+            <input name = "deliveryMethod" type = "radio" value = "pickup"/> Pickup<br/>
+            <input name = "address1" placeholder="Address Line 1" class = "lg-input"/><br/>
+            <input name = "address2" placeholder="Address line 2" class = "lg-input"/><br/>
+            
+            <input name = "city" placeholder="City" class = "sm-input"/>
+            <input name = "state" placeholder ="State" class = "sm-input"/><br/>
+            <input name = "zip" placeholder = "Zip Code" class = "sm-input"/><br/>
+
+            <br/>
+            <h4>Ingredients</h4>
+            <input name = "ingr" type = "checkbox" value = "Pepperoni"/> Pepperoni<br/>
+            <input name = "ingr" type = "checkbox" value = "Cheese"/> Cheese<br/>
+            <input name = "ingr" type = "checkbox" value = "Pineapple"/> Pineapple<br/>
+
+            <h4>Size</h4>
+            <select name = "size">
+                <option value = "12" > 12" - $10.99</option>
+                <option value = "16"> 16" - $13.99</option>
+                <option value = "18"> 18" - $16.99</option>
+            </select>
+        </form>
+    </section>
+
+
+    
+</html>
