@@ -31,7 +31,24 @@ function findMissing(list, n){
         if(list[i] != expected){
             return expected
         }
+        expected += n;
     }
     return list[list.length-1] + n //expecting the incremented value after this
 }
 
+//built in sort
+var numbers = [10, 200, 3, 19, 492, 29, 9, 238]
+numbers.sort(function(a, b){return a-b;});
+
+var unsorted = [9, 2, 4, 3, 1, 6, 8, 7];
+function missingNumberSEQ(l){
+    var list = l.sort(function(a, b){return a-b;})
+    expected = 1;
+    list.array.forEach(element => {
+        if(element != expected){
+            return expected;
+        }
+        expected += 1;
+    });
+    return list[list.length-1] + 1;
+}
